@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GEN TABLE</title>
+</head>
+<body>
+    <style>
+        tr,td {padding : 10px}
+    </style>
+    <table border="1">
+        <tr>
+            <td>วัน/เวลา</td>
+            <td>08:00-09:00</td>
+            <td>09:00-10:00</td>
+            <td>10:00-11:00</td>
+            <td>11:00-12:00</td>
+            <td>12:00-13:00</td>
+            <td>13:00-14:00</td>
+            <td>14:00-15:00</td>
+            <td>15:00-16:00</td>
+            <td>16:00-17:00</td>
+            <td>17:00-18:00</td>
+            <td>18:00-19:00</td>
+            <td>19:00-20:00</td>
+            <td>20:00-21:00</td>
+        </tr>
+        <tr>
+            <td>วันจันทร์</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>อังคาร</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>พุธ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>พฤหัสบดี</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ศุกร์</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        var time = <?php echo $coursecode ?>;
+        alert(time);
+    </script>
+</body>
+</html>

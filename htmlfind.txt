@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<meta http-equiv=Content-Type content="text/html; charset=windows-874">
+<meta name="description" content="ระบบทะเบียนและประเมินผลนักศึกษา">
+<meta name="keywords" content="reg,sut.ac.th,sut">
+<link rel="STYLESHEET" type="text/css" href="style/STYLE.css" charset="windows-874">
+<link rel="STYLESHEET" type="text/css" href="style/STYLE_Font.css" charset="windows-874">
+<script type="text/javascript" src="jQuery/jquery.js"></script>
+<script type="text/javascript" src="jQuery/jquery.alphanumeric.js"></script>
+<HTML>
+<HEAD>
+<TITLE>ระบบทะเบียนและประเมินผล มหาวิทยาลัยเทคโนโลยีสุรนารี </TITLE>
+</HEAD>
+
+
+<BODY TOPMARGIN=0 LEFTMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 BGCOLOR=#FFFFFF TEXT=#000000 ALINK=#003399 LINK=#003399 VLINK=#003399>
+
+
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR=#515151>
+<TD>
+
+<!-- Begin Menu -->
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD><a href=http://www.sut.ac.th/ces><IMG SRC=images/thai/logo/u_logo.gif border = 0></a> 
+
+<!-- <CENTER><font size="1" color="white">
+10/3/2560 18:16:21</font></CENTER> --></TD></TR>
+<TR><TD HEIGHT=36>&nbsp;</TD></TR>
+<TR VALIGN=MIDDLE><TD HEIGHT=25 ALIGN=MIDDLE>
+<A HREF=class_info.asp?backto=home&acadyear=2559&semester=3>
+<IMG SRC=images/thai/menu/goback_1.gif WIDTH=152 HEIGHT=22 BORDER=0></A></TD></TR>
+<TR><TD HEIGHT=190>&nbsp;</TD></TR>
+</TABLE>
+<!-- End Menu -->
+</TD>
+
+<!-- Vertical Bar -->
+<TD WIDTH=3 BGCOLOR=#FFFFA0>&nbsp;</TD>
+
+<TD BGCOLOR=#FFFFFF>
+
+<!-- Begin Page Detail -->
+<IMG SRC= images/thai/banner/welcome_0.jpg WIDTH=576 HEIGHT=105>
+<DIV ALIGN=CENTER><FONT FACE="MS Sans Serif" SIZE=3>ทั้งหมด รายวิชา<br>ทั้งหมด สำนักวิชา</DIV><DIV ALIGN=CENTER><FONT FACE="MS Sans Serif" SIZE=3>รหัสวิชา: 103105</DIV></DIV><DIV ALIGN=CENTER><FONT FACE="MS Sans Serif" COLOR=#0000FF SIZE=5><B>ปีการศึกษา 2559</B> / 3</DIV><DIV ALIGN=CENTER><FONT FACE="MS Sans Serif" SIZE=3>จำนวนรายการที่ได้จากการค้นหาไม่เกิน 100 รายการ</DIV><BR><TABLE BORDER=0 CELLSPACING=1 CELLPADDING=0><TR><TD></TD><TD VALIGN=TOP ALIGN=CENTER><A HREF=#bottom><IMG SRC=images/common/button/pull_down_1.gif WIDTH=11 HEIGHT=10 BORDER=0></A></TD><TD COLSPAN=7><FONT FACE="MS Sans Serif" SIZE=3><B>ใช้เม้าส์ Click ที่รหัสวิชาเพื่อแสดงรายละเอียดของวิชานั้นๆ</B></FONT></TD></TR><TR><TD></TD><TD ROWSPAN=2 BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>&nbsp;รหัสวิชา - Version</TD><TD ROWSPAN=2 BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>&nbsp;ชื่อรายวิชา</TD><TD ROWSPAN=2 NOWRAP BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>&nbsp;หน่วยกิต&nbsp;</TD><TD ROWSPAN=2 NOWRAP BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>&nbsp;ภาษา&nbsp;</TD><TD ROWSPAN=2 NOWRAP BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>&nbsp;เวลา&nbsp;</TD><TD COLSPAN=5 NOWRAP ALIGN=CENTER BGCOLOR=#383880><FONT SIZE=1  COLOR=#FFFFFF>&nbsp;ข้อมูลรายวิชาในปีการศึกษาที่&nbsp;2559/3</TD></TR><TR><TD></TD><TD ALIGN=RIGHT BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>กลุ่ม&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>รับ&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>ลง&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>เหลือ&nbsp;</TD><TD BGCOLOR=#383880><FONT SIZE=1 COLOR=#FFFFFF>&nbsp;สถานะ</TD></TR></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=1>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>Fr</font></b><font color=#808080>13:00-15:00 <U>B2101</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>1&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=2>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>13:00-15:00 <U>B2101</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>2&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=3>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>13:00-15:00 <U>B2102</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>3&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=4>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>Th</font></b><font color=#808080>13:00-15:00 <U>B2101</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>4&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=5>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>08:00-10:00 <U>B4101</u><br><b><font color=#5080E0>Th</font></b><font color=#808080>17:00-19:00 <U>B2101</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>5&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=6>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>13:00-15:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>13:00-15:00 <U>B4101</u><br><b><font color=#5080E0>Fr</font></b><font color=#808080>13:00-15:00 <U>B2102</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>6&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=7>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0F5><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>13:00-15:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>13:00-15:00 <U>B4101</u><br><b><font color=#5080E0>Th</font></b><font color=#808080>10:00-12:00 <U>B2102</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>7&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0F5><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0F5><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR VALIGN=TOP><TD WIDTH=30></TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>&nbsp;<A HREF=class_info_2.asp?backto=home&option=0&courseid=1000046&coursecode=103105&acadyear=2559&semester=3&avs293204461=8>103105 - 1</A>&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=2>CALCULUS III<br><FONT SIZE=1 color=#660000>( สำหรับนศ.ปี 1 วิศว)<FONT SIZE=1 color=#407060><li>Assistant Professor Dr.Eckart Schulz<li>ผู้ช่วยศาสตราจารย์ ดร.อรชุน ไชยเสนะ</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;4 (4-0-8)</TD><TD ALIGN=CENTER NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;TH : ไทย</TD><TD NOWRAP BGCOLOR=#F0F0FF><FONT SIZE=1><b><font color=#5080E0>Mo</font></b><font color=#808080>13:00-15:00 <U>B4101</u><br><b><font color=#5080E0>We</font></b><font color=#808080>13:00-15:00 <U>B4101</u><br><b><font color=#5080E0>Th</font></b><font color=#808080>10:00-12:00 <U>B3101</u></TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>8&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>0&nbsp;</TD><TD ALIGN=RIGHT BGCOLOR=#F0F0FF><FONT SIZE=1>300&nbsp;</TD><TD BGCOLOR=#F0F0FF><FONT SIZE=1>&nbsp;W</TD><TD></TD></TR><TR><TD WIDTH=30></TD><TD COLSPAN=3><FONT FACE="MS Sans Serif" SIZE=3>[หน้าก่อน]
+[หน้าต่อไป]</TD>
+</TR></TABLE><TABLE BORDER=0><TR><TD WIDTH=20></TD><TD><FONT SIZE=1><U>หมายเหตุ</U> สถานะ</TD></TR><TR><TD></TD><TD><FONT SIZE=1>A = เพิ่มผ่าน WEB ได้เท่านั้น</TD></TR><TR><TD></TD><TD><FONT SIZE=1>C = ปิดไม่รับลง</TD></TR><TR><TD></TD><TD><FONT SIZE=1>D = ถอนผ่าน WEB ได้เท่านั้น</TD></TR><TR><TD></TD><TD><FONT SIZE=1>N = เปิดลงปกติ ทำการโดยเจ้าหน้าที่เท่านั้น</TD></TR><TR><TD></TD><TD><FONT SIZE=1>W = เปิดลงปกติ สามารถลงทะเบียนผ่าน WEB ได้</TD></TR><TR><TD></TD><TD><FONT SIZE=1>X = เปลี่ยนกลุ่มผ่าน WEB ได้เท่านั้น</TD></TR></TABLE>
+<!-- End Page Detail -->
+</TD>
+</TR>
+
+<!-- Footer -->
+
+
+
+<TR>
+<TD WIDTH=173 HEIGHT=20 BGCOLOR=#515151>&nbsp;</TD>
+<TD WIDTH=3 BGCOLOR=#FFFFA0>&nbsp;</TD>
+<TD></TD>
+</TR>
+
+<TR>
+<TD WIDTH=173 ALIGN=CENTER BGCOLOR=#515151></TD>
+<!-- ยกเลิก logo AVS
+<TD WIDTH=173 ALIGN=CENTER BGCOLOR=#515151><A HREF=http://www.avs.co.th><IMG SRC= images/thai/logo/avs3d_1.gif WIDTH=88 HEIGHT=29 BORDER=0></A></TD>
+-->
+<TD WIDTH=3 BGCOLOR=#FFFFA0>&nbsp;</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;<A NAME=bottom HREF=#top><IMG SRC=images/common/button/go_top_1.gif WIDTH=129 HEIGHT=29 BORDER=0></A>
+
+<!-- ลบ script sms ออกไป -->
+
+<br>
+<font size="-2" color="gray">&nbsp;&nbsp;&nbsp;&nbsp;- การแสดงผลที่เหมาะสมแนะนำให้ใช้ browser เป็น Internet Explorer Version 5.0 ขึ้นไป<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และขนาดความกว้างหน้าจอ (Screen Area) เป็น 1024x768 pixels</font>
+
+
+
+
+<TR>
+<TD WIDTH=173 BGCOLOR=#515151>&nbsp;</TD>
+<TD WIDTH=3 BGCOLOR=#FFFFA0>&nbsp;</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;<b><font face=tahoma size=1 color=#000000>contact staff :<a href=mailto:> <font color=#A00000 face=tahoma>ศูนย์บริการการศึกษา</TD></a></b>
+</TR>
+
+
+
+<TR>
+<TD WIDTH=173 BGCOLOR=#515151>&nbsp;</TD>
+<TD WIDTH=3 BGCOLOR=#FFFFA0>&nbsp;</TD>
+<TD></TD>
+</TR>
+
+
+
+
+</TABLE>
+
+</BODY>
+</HTML>
+
+<!-- Programmed by Advance Vision Systems, 1999 -->

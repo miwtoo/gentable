@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>GEN TABLE</title>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.ajax-cross-origin.min.js" type="text/javascript"></script>
 </head>
 <body>
     <style>
-        tr,td {padding : 10px}
+        table, tr,td {
+          border: 1px solid black;
+          padding : 10px
+        }
+        table {
+          border-collapse: collapse;
+        }
     </style>
-    <table border="1">
-        <tr>
+    <input type="button" class="Add" value="+">
+    <input type="button" class="Del" value="-">
+    <table>
+        <tr class="time">
             <td>วัน/เวลา</td>
             <td>08:00-09:00</td>
             <td>09:00-10:00</td>
@@ -25,7 +35,7 @@
             <td>19:00-20:00</td>
             <td>20:00-21:00</td>
         </tr>
-        <tr>
+        <tr class="day">
             <td>วันจันทร์</td>
             <td></td>
             <td></td>
@@ -41,7 +51,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="day">
             <td>อังคาร</td>
             <td></td>
             <td></td>
@@ -57,7 +67,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="day">
             <td>พุธ</td>
             <td></td>
             <td></td>
@@ -73,7 +83,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="day">
             <td>พฤหัสบดี</td>
             <td></td>
             <td></td>
@@ -89,7 +99,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="day">
             <td>ศุกร์</td>
             <td></td>
             <td></td>
@@ -106,9 +116,58 @@
             <td></td>
         </tr>
     </table>
+
+    <input type="text" placeholder="รหัสวิชา" id="classid" value="523201">
+    <input type="text" placeholder="กลุ่ม" class="group">
+    <input type="button" value="Getdata" class="getdata">
+    <input type="button" value="Click me" id="btn"/>
+    <div id="test" />
+
     <script>
-        var time = <?php echo $coursecode ?>;
-        alert(time);
+      var datasrc;
+      $(".Add").click(function() {
+        time = $("tr.time td:last-child").text();
+        var f_time = time.slice(0, 2);
+        f_time++;
+        var l_time = time.slice(6, 8);
+        l_time++;
+        $("tr.time").append("<td>" + f_time + ":00" + "-" + l_time + ":00" + "</td>");
+        //$("tr.time").append("<td>"+time+"</td>");
+        $("tr.day").append("<td></td>");
+      });
+
+      $(".Del").click(function() {
+        if ($("tr.time td:last-child").html() != "09:00-10:00") {
+          $("tr td:last-child").remove();
+        } else {
+          alert("ลบไม่ได้");
+        }
+      })
+
+
+
+        $('.getdata').click(function() {
+          var classid = $('#classid').val();
+          var regurl = 'http://reg6.sut.ac.th/registrar/class_info_1.asp?coursestatus=O00&facultyid=all&maxrow=50&acadyear=2560&semester=1&CAMPUSID=&LEVELID=&coursecode='+classid+'&coursename=&cmd=2';
+
+          $.ajax({
+            crossOrigin: true,
+            url: regurl,
+            charset: 'windows-874',
+            success: function(data) {
+              datasrc = data;
+              $('#test').html(datasrc)
+              alert("Ok!");
+
+            }
+          });
+        });
+
+        $('#btn').click(function() {
+            var res = datasrc.match(/[A-Z][A-Z](?=<.font><.b><font color=#808080>)(<.font><.b><font color=#808080>)[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]/gi);
+            console.log(res);
+            $('#test').html(res)
+          });
     </script>
 </body>
 </html>

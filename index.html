@@ -5,6 +5,9 @@
     <title>GEN TABLE</title>
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.ajax-cross-origin.min.js" type="text/javascript"></script>
+    <script src="js/jscolor.min.js" type="text/javascript"></script>
+
+    </script>
 </head>
 <body>
     <style>
@@ -23,118 +26,78 @@
             <td>วัน/เวลา</td>
             <td>08:00-09:00</td>
             <td>09:00-10:00</td>
-            <td>10:00-11:00</td>
-            <td>11:00-12:00</td>
-            <td>12:00-13:00</td>
-            <td>13:00-14:00</td>
-            <td>14:00-15:00</td>
-            <td>15:00-16:00</td>
-            <td>16:00-17:00</td>
-            <td>17:00-18:00</td>
-            <td>18:00-19:00</td>
-            <td>19:00-20:00</td>
-            <td>20:00-21:00</td>
+
         </tr>
-        <tr class="day">
+        <tr class="Mo">
             <td>วันจันทร์</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="08"></td>
+            <td class="09"></td>
+
         </tr>
-        <tr class="day">
+        <tr class="Tu">
             <td>อังคาร</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="08"></td>
+            <td class="09"></td>
+
         </tr>
-        <tr class="day">
+        <tr class="We">
             <td>พุธ</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="08"></td>
+            <td class="09"></td>
+
         </tr>
-        <tr class="day">
+        <tr class="Th">
             <td>พฤหัสบดี</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="08"></td>
+            <td class="09"></td>
+
         </tr>
-        <tr class="day">
+        <tr class="Fr">
             <td>ศุกร์</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="08"></td>
+            <td class="09"></td>
+
         </tr>
     </table>
 
-    <input type="text" placeholder="รหัสวิชา" id="classid" value="523201">
-    <input type="text" placeholder="กลุ่ม" class="group">
-    <input type="button" value="Getdata" class="getdata">
-    <input type="button" value="Click me" id="btn"/>
+    <input type="text" placeholder="รหัสวิชา" class="classid" value="202211">
+    <input type="text" placeholder="กลุ่ม" class="group" value="1">
+    <input class="jscolor" value="00FFFF">
+    <input type="button" value="Add" onclick="getdata(0)">
+    <input type="button" value="Delclsss" onclick="delclass(0)"><br/>
+    <input type="text" placeholder="รหัสวิชา" class="classid" value="523271">
+    <input type="text" placeholder="กลุ่ม" class="group" value="1">
+    <input class="jscolor" value="DEB887">
+    <input type="button" value="Add" onclick="getdata(1)">
+    <input type="button" value="Delclsss" onclick="delclass(1)"><br/>
+    <input type="text" placeholder="รหัสวิชา" class="classid" value="523201">
+    <input type="text" placeholder="กลุ่ม" class="group" value="1">
+    <input class="jscolor" value="BDB76B">
+    <input type="button" value="Add" onclick="getdata(2)">
+    <input type="button" value="Delclsss" onclick="delclass(2)"><br/>
+    <input type="text" placeholder="รหัสวิชา" class="classid" value="523275">
+    <input type="text" placeholder="กลุ่ม" class="group" value="1">
+    <input class="jscolor  {onFineChange:'update(this)'}" value="DCDCDC">
+    <input type="button" value="Add" onclick="getdata(3)">
+    <input type="button" value="Delclsss" onclick="delclass(3)"><br/>
     <div id="test" />
 
     <script>
       var datasrc;
-      $(".Add").click(function() {
+      function Add() {
         time = $("tr.time td:last-child").text();
         var f_time = time.slice(0, 2);
         f_time++;
         var l_time = time.slice(6, 8);
         l_time++;
         $("tr.time").append("<td>" + f_time + ":00" + "-" + l_time + ":00" + "</td>");
-        //$("tr.time").append("<td>"+time+"</td>");
-        $("tr.day").append("<td></td>");
-      });
+
+        $("tr.Mo").append('<td class="'+f_time+'"></td>');
+        $("tr.Tu").append('<td class="'+f_time+'"></td>');
+        $("tr.We").append('<td class="'+f_time+'"></td>');
+        $("tr.Th").append('<td class="'+f_time+'"></td>');
+        $("tr.Fr").append('<td class="'+f_time+'"></td>');
+      };
 
       $(".Del").click(function() {
         if ($("tr.time td:last-child").html() != "09:00-10:00") {
@@ -144,10 +107,18 @@
         }
       })
 
-
-
-        $('.getdata').click(function() {
-          var classid = $('#classid').val();
+      function getdata(x) {
+          var classid = $('.classid:eq('+x+')').val();
+          var group = $('.group:eq('+x+')').val()
+          var color = $('.jscolor:eq('+x+')').val()
+          geturl(classid,group,color)
+      };
+      function delclass(x) {
+          var classid = $('.classid:eq('+x+')').val();
+          var group = $('.group:eq('+x+')').val()
+          Delclass(classid,group)
+      };
+      function geturl(classid, group ,color) {
           var regurl = 'http://reg6.sut.ac.th/registrar/class_info_1.asp?coursestatus=O00&facultyid=all&maxrow=50&acadyear=2560&semester=1&CAMPUSID=&LEVELID=&coursecode='+classid+'&coursename=&cmd=2';
 
           $.ajax({
@@ -156,18 +127,80 @@
             charset: 'windows-874',
             success: function(data) {
               datasrc = data;
-              $('#test').html(datasrc)
-              alert("Ok!");
+              //$('#test').html(datasrc)
+              var res = datasrc.match(/[A-Z][A-Z](?=<.font><.b><font color=#808080>)<.*?>[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9] <U>(.*?)<.u>(.*?)[0-9][0-9]*(?=&nbsp;<.TD>)/gi);
+              var res = res[group-1].match(/[A-Z][a-z](?=<.font><.b><font color=#808080>)|[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]|(<U>).*?(?=<.u>)/gi);
+              res = res.join();
+              console.log(res);
+              var day = res.match(/[A-Z][a-z](?=,[0-9])/gi);
+              var time = res.match(/[0-9][0-9](?=:[0-9][0-9])/gi).join("").match(/[0-9][0-9][0-9][0-9]/g);
+              console.log(day);
+              console.log(time);
 
+              for (var j = 0; j < day.length; j++) {
+                if(time[j].slice(2,4)-1 > $("tr.Mo td:last-child").attr('class')){
+                  while (time[j].slice(2,4)-1 > $("tr.Mo td:last-child").attr('class')) {
+                    Add();
+                  }
+                }
+                for (var i = time[j].slice(0,2); i < time[j].slice(2,4); i++) {
+                  var t = document.createTextNode(classid+','+group);
+                  $("tr."+day[j]+" td."+i).html(t).css("background-color", '#'+color);
+                }
+              }
             }
           });
-        });
+        };
 
-        $('#btn').click(function() {
-            var res = datasrc.match(/[A-Z][A-Z](?=<.font><.b><font color=#808080>)(<.font><.b><font color=#808080>)[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]/gi);
+        function Delclass(classid,group){
+            var day = ["Mo","Tu","We","Th","Fr"];
+            console.log(classid);
+            console.log(group);
+            for (var i = 0; i < 5; i++) {
+              for (var j = 8; j <= $("tr.Mo td:last-child").attr('class'); j++) {
+                if ($('tr.'+day[i]+' td.'+j+'').html() == (''+classid+','+group+'') || $('tr.'+day[i]+' td.08').html() == (''+classid+','+group+'') || $('tr.'+day[i]+' td.09').html() == (''+classid+','+group+'')) {
+
+                  if(j == 8){
+                    $('tr.'+day[i]+' td.08').html('').css("background-color", '#'+'FFFFFF');
+                  }
+                  else if(j == 9){
+                    $('tr.'+day[i]+' td.09').html('').css("background-color", '#'+'FFFFFF');
+
+                  }
+                  else{
+                  $('tr.'+day[i]+' td.'+j+'').html('').css("background-color", '#'+'FFFFFF');
+                  }
+                }
+              }
+            }
+        };
+
+        function update(jscolor) {
+          //http://jscolor.com/examples/
+          $('tr.Mo td.10').css("background-color", '#'+jscolor);
+        }
+        /*$('#btn').click(function() {
+            var group = $('.group').val()-1;
+            var classid = $('#classid').val();
+            var res = datasrc.match(/[A-Z][A-Z](?=<.font><.b><font color=#808080>)<.*?>[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9] <U>(.*?)<.u>(.*?)[0-9][0-9]*(?=&nbsp;<.TD>)/gi);
+            var res = res[group].match(/[A-Z][a-z](?=<.font><.b><font color=#808080>)|[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]|(<U>).*?(?=<.u>)/gi);
+            res = res.join();
             console.log(res);
-            $('#test').html(res)
-          });
+
+            var day = res.match(/[A-Z][a-z](?=,[0-9])/gi);
+            var time = res.match(/[0-9][0-9](?=:[0-9][0-9])/gi).join("").match(/[0-9][0-9][0-9][0-9]/g);
+
+
+            for (var j = 0; j < day.length; j++) {
+              for (var i = time[j].slice(0,2); i < time[j].slice(2,4); i++) {
+                var t = document.createTextNode(classid+','+group+1);
+                $("tr."+day[j]+" td."+i).html(t).css("background-color", "yellow");
+              }
+            }
+
+
+            //$('#test').html(res)
+          });*/
     </script>
 </body>
 </html>

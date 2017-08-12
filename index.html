@@ -80,9 +80,10 @@
     <input class="jscolor  {onFineChange:'update(this)'}" value="DCDCDC">
     <input type="button" value="Add" onclick="getdata(3)">
     <input type="button" value="Delclsss" onclick="delclass(3)"><br/>
-    <div id="test" />
+    <img id="load" src="200.gif">
 
     <script>
+        $('#load').hide();
       var datasrc;
       function Add() {
         time = $("tr.time td:last-child").text();
@@ -126,6 +127,14 @@
             url: regurl,
             proxy: "https://miwtoo.000webhostapp.com/proxy.php",
             charset: 'windows-874',
+              beforeSend: function(){
+            //alert("beforeSend");
+            $('#load').show();
+         },
+            complete: function(){
+            //alert("complete");
+             $('#load').hide();
+          },
             success: function(data) {
               datasrc = data;
               //$('#test').html(datasrc)

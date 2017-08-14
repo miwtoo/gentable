@@ -59,30 +59,18 @@
 
         </tr>
     </table>
-
-    <input type="text" placeholder="รหัสวิชา" class="classid" value="202211">
-    <input type="text" placeholder="กลุ่ม" class="group" value="1">
-    <input class="jscolor" value="00FFFF">
-    <input type="button" value="Add" onclick="getdata(0)">
-    <input type="button" value="Delclsss" onclick="delclass(0)"><br/>
-    <input type="text" placeholder="รหัสวิชา" class="classid" value="523271">
-    <input type="text" placeholder="กลุ่ม" class="group" value="1">
-    <input class="jscolor" value="DEB887">
-    <input type="button" value="Add" onclick="getdata(1)">
-    <input type="button" value="Delclsss" onclick="delclass(1)"><br/>
-    <input type="text" placeholder="รหัสวิชา" class="classid" value="523201">
-    <input type="text" placeholder="กลุ่ม" class="group" value="1">
-    <input class="jscolor" value="BDB76B">
-    <input type="button" value="Add" onclick="getdata(2)">
-    <input type="button" value="Delclsss" onclick="delclass(2)"><br/>
-    <input type="text" placeholder="รหัสวิชา" class="classid" value="523275">
-    <input type="text" placeholder="กลุ่ม" class="group" value="1">
-    <input class="jscolor  {onFineChange:'update(this)'}" value="DCDCDC">
-    <input type="button" value="Add" onclick="getdata(3)">
-    <input type="button" value="Delclsss" onclick="delclass(3)"><br/>
-    <ui>
-        <li class="todo">Miw</li>
-        <li class="todo">Too</li>
+    
+    <div class="header">
+        <h2>My subject</h2>
+        <input type="text" placeholder="รหัสวิชา" class="classid" value="202211">
+        <input type="text" placeholder="กลุ่ม" class="group" value="1">
+        <input class="jscolor" value="00FFFF">
+        <input type="button" value="Add" onclick="getdata(0)">
+        <input type="button" value="Delclsss" onclick="delclass(0)">
+    </div>
+    <ui id="subject">
+        <li class="todo">202211 Group 1 <button class="jscolor {valueElement:null,value:'66ccff'}" style="width:20px; height:15px;"></button></li>
+        <li class="todo">523271 Group 1 <button class="jscolor {valueElement:null,value:'66ccff'}" style="width:20px; height:15px;"></button></li>
     </ui>
     <img id="load" src="200.gif">
 
@@ -105,7 +93,7 @@
       };
 
       $(".Del").click(function() {
-        if ($("tr.time td:last-child").html() != "09:00-10:00") {
+        if ($("tr:empty")) {
           $("tr td:last-child").remove();
         } else {
           alert("ลบไม่ได้");
@@ -118,11 +106,7 @@
           var color = $('.jscolor:eq('+x+')').val()
           geturl(classid,group,color)
       };
-      function delclass(x) {
-          var classid = $('.classid:eq('+x+')').val();
-          var group = $('.group:eq('+x+')').val()
-          Delclass(classid,group)
-      };
+
       function geturl(classid, group ,color) {
           var regurl = 'http://reg6.sut.ac.th/registrar/class_info_1.asp?coursestatus=O00&facultyid=all&maxrow=50&acadyear=2560&semester=1&CAMPUSID=&LEVELID=&coursecode='+classid+'&coursename=&cmd=2';
 
@@ -140,6 +124,7 @@
              $('#load').hide();
           },
             success: function(data) {
+            
               datasrc = data;
               //$('#test').html(datasrc)
               var res = datasrc.match(/[A-Z][A-Z](?=<.font><.b><font color=#808080>)<.*?>[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9] <U>(.*?)<.u>(.*?)[0-9][0-9]*(?=&nbsp;<.TD>)/gi);
@@ -162,6 +147,7 @@
                   $("tr."+day[j]+" td."+i).html(t).css("background-color", '#'+color);
                 }
               }
+            newElement();
             }
           });
         };
@@ -215,6 +201,62 @@
 
             //$('#test').html(res)
           });*/
+        
+        
+        // Create a "close" button and append it to each list item
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for(i = 0; i < myNodelist.length; i++){
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = 'close'
+            span.appendChild(txt);
+            myNodelist[i].appendChild(span);
+        }
+        //Click on a close button to hide the current list item
+        var close = document.getElementsByClassName("close");
+        var i;
+        for(i = 0; i < close.length; i++){
+            close[i].onclick = function(){
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+        // Create a new list item when clicking on the "Add" button
+        function newElement(){
+            var li = document.createElement("li");
+            var classid = $('.classid').val();
+            var group = $('.group').val();
+            var t = document.createTextNode(classid + " Group "+ group);
+            
+            li.appendChild(t);
+            if((classid && group) === ''){
+                alert("Write something!");
+            }
+            else{
+                document.getElementById("subject").appendChild(li);
+            }
+            //$('.classid').val() = '';
+            //$('.group').val() = '';
+            
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            li.appendChild(span);
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                    function delclass(x) {
+                        var classid = $('.classid:eq('+x+')').val();
+                        var group = $('.group:eq('+x+')').val();
+                        Delclass(classid,group);
+                     }
+                }
+            }
+        }
     </script>
 </body>
 </html>

@@ -80,9 +80,14 @@
     <input class="jscolor  {onFineChange:'update(this)'}" value="DCDCDC">
     <input type="button" value="Add" onclick="getdata(3)">
     <input type="button" value="Delclsss" onclick="delclass(3)"><br/>
-    <div id="test" />
+    <img id="load" src="200.gif">
 
+<<<<<<< HEAD
     <script type="application/javascript">
+=======
+    <script>
+        $('#load').hide();
+>>>>>>> 9c18b1f58713fc8b0af8ff34efd6e9d732b2d197
       var datasrc;
       function Add() {
         time = $("tr.time td:last-child").text();
@@ -124,7 +129,16 @@
           $.ajax({
             crossOrigin: true,
             url: regurl,
+            proxy: "https://miwtoo.000webhostapp.com/proxy.php",
             charset: 'windows-874',
+              beforeSend: function(){
+            //alert("beforeSend");
+            $('#load').show();
+         },
+            complete: function(){
+            //alert("complete");
+             $('#load').hide();
+          },
             success: function(data) {
               datasrc = data;
               //$('#test').html(datasrc)
